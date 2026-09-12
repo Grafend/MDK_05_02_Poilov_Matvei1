@@ -24,5 +24,13 @@ namespace PR2._1
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            double x = Int32.Parse(HER.Text);
+            double sum = 0;
+            sum = (Math.Pow(x, 2)-7*x+10)/(Math.Pow(x, 2)-8*x+12);
+            Content = sum;
+        }
     }
 }
